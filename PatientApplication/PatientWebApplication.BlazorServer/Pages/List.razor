@@ -1,0 +1,28 @@
+﻿@page "/list"
+@inject IController controller
+@inject IModel model
+
+<h5>Text to search:</h5>
+<input name="searchText" class="text-box single-line" @bind="model.SearchText" style="width: 200px" />
+<button name="searchButton" class="btn btn-secondary" @onclick="controller.SearchPrescriptionsAsync">Search</button>
+
+<h5 style="margin: 4px 0px 4px 0px">Prescriptions</h5>
+<div class="col-xl-6" style="height: 240px">
+  @foreach( PrescriptionData prescriptionData in model.PrescriptionList )
+  {
+    <div class="row">
+      <button class="btn btn-">@prescriptionData.Id</button>
+    </div>
+  }
+</div>
+
+<div class="row" style="width: 200px; justify-content: space-around">
+  <button class="btn btn-light" style="width: 60px">Add</button>
+  <button class="btn btn-light" style="width: 60px">View</button>
+  <button class="btn btn-light" style="width: 60px">Edit</button>
+</div>
+
+<div class="col-xl-6" style="margin-top: 24px; width: 240px; justify-content: right">
+  <a href="https://zsut.tele.pw.edu.pl/" target="_blank">ZSUT IT PW home page</a>
+</div>
+

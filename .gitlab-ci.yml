@@ -1,0 +1,50 @@
+stages:
+    - buildDoctorApp
+    - testDoctorApp
+    - buildPatientApp
+    - testPatientApp
+build:
+    stage: buildDoctorApp
+    before_script:
+      - cd .\DoctorApplication\DoctorWebApplication.BlazorServer
+    script:
+      - dotnet restore
+      - dotnet build -c Debug
+     # - dotnet build -c Release
+    tags:
+      - all, integration
+
+test:
+    stage: testDoctorApp
+    before_script:
+      - cd .\DoctorApplication\DoctorApplication.Tests
+    script:
+      - dotnet restore
+      - dotnet build -c Debug
+    #  - dotnet build -c Release
+      - dotnet test
+    tags:
+      - all, integration
+
+build:
+    stage: buildPatientApp
+    before_script:
+      - cd .\PatientApplication2\PatientWebApplication2.BlazorServer
+    script:
+      - dotnet restore
+      - dotnet build -c Debug
+     # - dotnet build -c Release
+    tags:
+      - all, integration
+
+test:
+    stage: testPatientApp
+    before_script:
+      - cd .\PatientApplication2\PatientApplication2.Tests
+    script:
+      - dotnet restore
+      - dotnet build -c Debug
+   #   - dotnet build -c Release
+      - dotnet test
+    tags:
+      - all, integration

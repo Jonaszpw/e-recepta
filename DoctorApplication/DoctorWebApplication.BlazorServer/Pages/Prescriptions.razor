@@ -1,0 +1,59 @@
+﻿@page "/prescriptions"
+@inject IController controller
+@inject IModel model
+
+<style>
+    .listbox
+    {
+        overflow-y: scroll;
+        height: 400px;
+    }
+    .row
+    {
+        margin: 2px;
+    }
+</style>
+
+<h5>Add new prescription:</h5>
+<input name="Id" class="text-box single-line" @bind="model.Pres.Id" style="width: 200px" placeholder="Id"/>
+<input name="DoctorDetails" class="text-box single-line" @bind="model.Pres.DoctorDetails" style="width: 200px" placeholder="DoctorDetails"/>
+<input name="PatientDetails" class="text-box single-line" @bind="model.Pres.PatientDetails" style="width: 200px" placeholder="PatientDetails"/>
+<input name="Date" class="text-box single-line" @bind="model.Pres.Date" style="width: 200px" placeholder="Date"/>
+<input name="MedicinId" class="text-box single-line" @bind="model.Pres.MedicinesIds" style="width: 200px" placeholder="MedicineIds"/>
+  <button class="btn btn-light" style="width: 60px" @onclick="controller.AddPrescriptionAsync">Add</button>
+
+
+
+<div class="row" style="width: 200px; justify-content: space-around">
+  <!--<button class="btn btn-light" style="width: 60px">View</button>
+  <button class="btn btn-light" style="width: 60px">Edit</button>-->
+</div>
+
+
+<h5>Text to search:</h5>
+<input name="searchText" class="text-box single-line" @bind="model.SearchText" style="width: 200px" />
+<button name="searchButtonforPr" class="btn btn-secondary" @onclick="controller.SearchPrescriptionsAsync">Search</button>
+
+
+<h5 style="margin: 4px 0px 4px 0px">List of prescriptions:</h5>
+<div class="listbox">
+  @foreach( PrescriptionData prescriptionData in model.PrescriptionList )
+  {
+    <div class="row">
+      <button class="btn btn-">@prescriptionData.Id</button>
+      <button class="btn btn-">@prescriptionData.DoctorDetails</button>
+      <button class="btn btn-">@prescriptionData.PatientDetails</button>
+      <button class="btn btn-">@prescriptionData.Date</button>
+      <button class="btn btn-">@prescriptionData.MedicinesIds</button>
+    </div>
+  }
+</div>
+
+ 
+
+
+
+<div class="col-xl-6" style="margin-top: 24px; width: 240px; justify-content: right">
+  <a href="https://zsut.tele.pw.edu.pl/" target="_blank">ZSUT IT PW home page</a>
+</div>
+

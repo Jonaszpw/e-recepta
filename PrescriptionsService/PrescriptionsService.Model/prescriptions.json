@@ -1,0 +1,131 @@
+[
+    
+    {
+        "Id": "12345",
+        "DoctorDetails": "Jonasz Borowiec",
+        "PatientDetails": "Jacek Misztal",
+        "Date": "wczoraj",
+        "IsCollected": true,
+        "MedicinesIds": "1 2"
+    },
+    {
+        "Id": "1",
+        "DoctorDetails": "at",
+        "PatientDetails": "ta",
+        "Date": "123456",
+        "IsCollected": false,
+        "MedicinesIds": "1 2 3"
+    },
+    {
+        "Id": "2",
+        "DoctorDetails": "at",
+        "PatientDetails": "attt",
+        "Date": "124356",
+        "IsCollected": false,
+        "MedicinesIds": "2 3"
+    },
+    {
+        "Id": "3",
+        "DoctorDetails": "jan",
+        "PatientDetails": "sosna",
+        "Date": "123456",
+        "IsCollected": false,
+        "MedicinesIds": "2"
+    },
+    {
+        "Id": "4",
+        "DoctorDetails": "at",
+        "PatientDetails": "aaaaa",
+        "Date": "123456",
+        "IsCollected": false,
+        "MedicinesIds": "4"
+    },
+    {
+        "Id": "5",
+        "DoctorDetails": "ere",
+        "PatientDetails": "ree",
+        "Date": "reer",
+        "IsCollected": false,
+        "MedicinesIds": "erer"
+    },
+    {
+        "Id": "9999",
+        "DoctorDetails": "jan",
+        "PatientDetails": "sosna",
+        "Date": "03062022",
+        "IsCollected": true,
+        "MedicinesIds": "2"
+    },
+    {
+        "Id": "6",
+        "DoctorDetails": "at",
+        "PatientDetails": "at",
+        "Date": "at",
+        "IsCollected": false,
+        "MedicinesIds": "at"
+    },
+    {
+        "Id": "7",
+        "DoctorDetails": "7",
+        "PatientDetails": "7",
+        "Date": "7",
+        "IsCollected": false,
+        "MedicinesIds": "7"
+    },
+    {
+        "Id": "8",
+        "DoctorDetails": "8",
+        "PatientDetails": "8",
+        "Date": "8",
+        "IsCollected": false,
+        "MedicinesIds": "8"
+    },
+    {
+        "Id": "9",
+        "DoctorDetails": "9",
+        "PatientDetails": "9",
+        "Date": "9",
+        "IsCollected": false,
+        "MedicinesIds": "9"
+    },
+    {
+        "Id": "10",
+        "DoctorDetails": "10",
+        "PatientDetails": "10",
+        "Date": "10",
+        "IsCollected": false,
+        "MedicinesIds": "10"
+    },
+    {
+        "Id": "12",
+        "DoctorDetails": "12",
+        "PatientDetails": "12",
+        "Date": "12",
+        "IsCollected": false,
+        "MedicinesIds": "12"
+    },
+    {
+        "Id": "69",
+        "DoctorDetails": "doktor",
+        "PatientDetails": "pacjent",
+        "Date": "01.01.2000",
+        "IsCollected": false,
+        "MedicinesIds": "1"
+    },
+    {
+        "Id": "70",
+        "DoctorDetails": "doktor",
+        "PatientDetails": "pacjent",
+        "Date": "01.01.2000",
+        "IsCollected": false,
+        "MedicinesIds": "1"
+    },
+    {
+        "Id": "71",
+        "DoctorDetails": "doktor",
+        "PatientDetails": "pacjent",
+        "Date": "01.01.2000",
+        "IsCollected": false,
+        "MedicinesIds": "1"
+    }
+]

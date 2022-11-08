@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Paracetamol",
+    "quantity": 97,
+    "description": "lek",
+    "price": 10.2,
+    "numberOfPills": 60
+  },
+  {
+    "id": "2",
+    "name": "Morfina",
+    "quantity": 1,
+    "description": "lek",
+    "price": 77.77,
+    "numberOfPills": 60
+  },
+  {
+    "id": "3",
+    "name": "Ibuprom",
+    "quantity": 3,
+    "description": "lke",
+    "price": 12.34,
+    "numberOfPills": 100
+  },
+  {
+    "id": "4",
+    "name": "Nie pierdol",
+    "quantity": 4,
+    "description": "supl",
+    "price": 50,
+    "numberOfPills": 5
+  },
+  {
+    "id": "5",
+    "name": "PowerPill",
+    "quantity": 100,
+    "description": "supl",
+    "price": 100,
+    "numberOfPills": 1
+  },
+  {
+    "id": "6",
+    "name": "Pokrzywka",
+    "quantity": 3,
+    "description": "supl",
+    "price": 20,
+    "numberOfPills": 10
+  },
+  {
+    "id": "7",
+    "name": "Abaktal",
+    "quantity": 2,
+    "description": "antybio",
+    "price": 21.37,
+    "numberOfPills": 3
+  }
+]
